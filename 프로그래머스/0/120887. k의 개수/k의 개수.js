@@ -1,10 +1,9 @@
 function solution(i, j, k) {
-    let count = 0;
+    let count = '';
     
-    for(let num = i; num<=j;num++){
-        count += num.toString().split("").filter(digit => digit === k.toString()).length;
+    for(i;i<=j;i++){
+        count += i
     }
     
-    return count;
-    
+    return count.split(k).length-1;
 }
